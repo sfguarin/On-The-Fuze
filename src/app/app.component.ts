@@ -49,8 +49,6 @@ export class AppComponent implements OnInit {
     this.api.getUser()
     .subscribe({
       next:(res)=>{
-        console.log('SOY LA RESPUESTA')
-        console.log(res)
         this.dataSource = new MatTableDataSource(res.data);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
