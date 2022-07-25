@@ -30,9 +30,6 @@ export class DialogComponent implements OnInit {
 
     if(this.editData){
 
-      console.log('holi')
-      console.log(this.editData.id)
-
       this.actionBtn = "Update";
 
       this.userForm.controls['userFirstName'].setValue(this.editData.name);
